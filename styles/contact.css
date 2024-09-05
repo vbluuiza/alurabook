@@ -1,0 +1,92 @@
+.contact {
+    background: var(--branco);
+    padding-block: 2.5rem 1rem;
+}
+
+.contact__container {
+    margin-inline: 2rem;
+    margin-block: 2rem;
+}
+
+.contact__title {
+    background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.125rem;
+    
+}
+
+.contact__description {
+    font-size: 1rem;
+    font-weight: 300;
+    background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-block: 1rem 1.5rem;
+    width: 70%;
+}
+
+.contact__input {
+    outline: none;
+    background: transparent;
+    color: #002f52;
+    font-size: 1rem;
+    border: none;
+    border: 1px solid #002f52 ;
+    width: 90%;
+    padding-inline: 2rem;
+    padding-block: 0.75rem;
+    border-radius: 24px;
+    
+}
+
+.contact__input::placeholder {
+    color: #002f52;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    background: url(../img/Email.svg) no-repeat;
+    background-position: 4rem;
+    text-align: center;
+}
+
+hr {
+    margin: 0;
+}
+
+.footer__end__text {
+    color: var(--preto);
+    font-size: 1rem;
+    text-align: left;
+    margin-inline: 2rem;
+    padding-block: 2rem;
+}
+
+
+/* MEDIA */
+
+@media screen and (min-width: 1024px) {
+    .contact__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact__title {
+        font-size: 1.5rem;
+    }
+    .contact__description {
+        font-size: 1rem;
+    }
+    .contact__input {
+        width: 30%;
+    }
+    .contact__input::placeholder {
+        font-family: "Poppins", sans-serif;
+        background: url(../img/Email.svg) no-repeat;
+        background-position: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
